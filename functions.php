@@ -17,5 +17,12 @@ function custom_enqueue_styles()
         array(),
         wp_get_theme()->get('Version')
     );
+
+    wp_enqueue_style(
+        'home-style',
+        get_stylesheet_directory_uri() . '/assets/styles/home.css',
+        array(),
+        wp_get_theme()->get('Version')
+    );
 }
 ?>
